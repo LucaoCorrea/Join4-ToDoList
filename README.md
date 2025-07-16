@@ -1,7 +1,7 @@
 # Projeto Quadro de Tarefas - Join4 
 
 Este é um projeto básico de **Quadro de Tarefas** desenvolvido como parte de estudos da **Join4**. Ele simula um quadro Trello, permitindo que os usuários criem, movam e excluam tarefas. Além disso, ele conta com funcionalidades como um Pomodoro Timer e Sticky Notes para aumentar a produtividade.
-![enter image description here](https://media.glassdoor.com/sqll/6286333/join4-squareLogo-1663897212421.png)
+
 ## Funcionalidades
 
 - **Tema escuro e claro:** O projeto permite alternar entre o tema claro e escuro para uma melhor experiência de usuário.
