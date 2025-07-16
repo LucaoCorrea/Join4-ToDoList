@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .sticky {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .pomodoro {
+    bottom: 10px;
+    right: 10px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .modal-box {
+    width: 280px;
+  }
+
+  .pomodoro {
+    width: 90%;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

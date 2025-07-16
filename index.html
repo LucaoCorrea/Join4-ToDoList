@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Join4 - Quadro de Tarefas</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Importando os arquivos CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/pomodoro.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/sticky-notes.css">
 </head>
 <body>
   <header>
@@ -14,7 +19,7 @@
   </header>
 
   <aside class="sticky-notes" id="stickyNotes"></aside>
-
+  
   <main class="board" id="board">
     <div class="column" data-status="todo">
       <h2>A Fazer</h2>
@@ -37,6 +42,7 @@
     <button onclick="openColumnModal()">+ Cards</button>
   </div>
 
+  <!-- Modal para Nova Tarefa -->
   <div class="modal-overlay" id="modal">
     <div class="modal-box">
       <h3>Nova Tarefa</h3>
@@ -56,6 +62,7 @@
     </div>
   </div>
 
+  <!-- Modal para Nova Coluna -->
   <div class="modal-overlay" id="columnModal">
     <div class="modal-box">
       <h3>Nova Coluna</h3>
@@ -67,6 +74,7 @@
     </div>
   </div>
 
+  <!-- Pomodoro -->
   <div class="pomodoro" id="pomodoro">
     <div id="timer">25:00</div>
     <div class="pomodoro-controls">
@@ -76,6 +84,10 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Importando os arquivos JS -->
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/pomodoro.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/sticky-notes.js"></script>
 </body>
 </html>

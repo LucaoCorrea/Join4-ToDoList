@@ -1,0 +1,34 @@
+body.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark header h1 {
+  color: #fff;
+}
+
+body.dark .column {
+  background: #2c2c2c;
+  box-shadow: none;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark .card p {
+  color: #fff;
+}
+
+body.dark .card.important {
+  background: #5f1e26;
+}
+
+body.dark .card.warning {
+  background: #735e00;
+}
+
+body.dark .card.idea {
+  background: #1e4d3c;
+}
