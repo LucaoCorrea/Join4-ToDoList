@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join4 - Quadro de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="https://media.glassdoor.com/sqll/6286333/join4-squareLogo-1663897212421.png" alt="Join4 Logo" />
+    <h1>Join4 - Quadro de Tarefas</h1>
+    <button id="toggleTheme">🌓</button>
+  </header>
+
+  <main class="board">
+    <div class="column" data-status="todo">
+      <h2>A Fazer</h2>
+      <div class="card-container" id="todo"></div>
+      <button onclick="openModal('todo')">+ Nova Tarefa</button>
+    </div>
+    <div class="column" data-status="doing">
+      <h2>Fazendo</h2>
+      <div class="card-container" id="doing"></div>
+      <button onclick="openModal('doing')">+ Nova Tarefa</button>
+    </div>
+    <div class="column" data-status="done">
+      <h2>Concluído</h2>
+      <div class="card-container" id="done"></div>
+      <button onclick="openModal('done')">+ Nova Tarefa</button>
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <h3>Nova Tarefa</h3>
+      <input type="text" id="taskInput" placeholder="Descreva a tarefa..." />
+      <input type="date" id="taskDate" />
+      <input type="text" id="taskLabel" placeholder="Etiqueta (ex: Urgente)" />
+      <select id="taskTheme">
+        <option value="default">Padrão</option>
+        <option value="important">Importante</option>
+        <option value="warning">Aviso</option>
+        <option value="idea">Ideia</option>
+      </select>
+      <div class="modal-actions">
+        <button onclick="confirmAddTask()">Adicionar</button>
+        <button class="cancel" onclick="closeModal()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
