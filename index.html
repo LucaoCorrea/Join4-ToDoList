@@ -13,7 +13,9 @@
     <button id="toggleTheme">🌓</button>
   </header>
 
-  <main class="board">
+  <aside class="sticky-notes" id="stickyNotes"></aside>
+
+  <main class="board" id="board">
     <div class="column" data-status="todo">
       <h2>A Fazer</h2>
       <div class="card-container" id="todo"></div>
@@ -31,6 +33,10 @@
     </div>
   </main>
 
+  <div class="column-control">
+    <button onclick="openColumnModal()">+ Cards</button>
+  </div>
+
   <div class="modal-overlay" id="modal">
     <div class="modal-box">
       <h3>Nova Tarefa</h3>
@@ -47,6 +53,26 @@
         <button onclick="confirmAddTask()">Adicionar</button>
         <button class="cancel" onclick="closeModal()">Cancelar</button>
       </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="columnModal">
+    <div class="modal-box">
+      <h3>Nova Coluna</h3>
+      <input type="text" id="columnName" placeholder="Nome da coluna (pode usar emoji)" />
+      <div class="modal-actions">
+        <button onclick="addColumn()">Adicionar</button>
+        <button class="cancel" onclick="closeColumnModal()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pomodoro" id="pomodoro">
+    <div id="timer">25:00</div>
+    <div class="pomodoro-controls">
+      <button onclick="startPomodoro()">Iniciar</button>
+      <button onclick="pausePomodoro()">Pausar</button>
+      <button onclick="resetPomodoro()">Resetar</button>
     </div>
   </div>
 
